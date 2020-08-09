@@ -1,4 +1,4 @@
-# Blox Theme Demo
+# Blox Theme: Quiz
 Lighthouse score: 100/100
 
 > The primary goal of the project is to facilitate rapid development of static websites.
@@ -15,8 +15,8 @@ This project includes:
 ## Getting Started
 ### 1. Clone this repository
 ```
-git clone https://github.com/Building-Blox/blox-theme-demo.git
-cd blox-theme-demo
+git clone https://github.com/building-blox/blox-theme-quiz.git
+cd blox-theme-quiz
 ```
 Or [download as a ZIP](https://github.com/Building-Blox/blox-theme-demo/archive/master.zip).
 
