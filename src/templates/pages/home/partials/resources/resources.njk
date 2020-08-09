@@ -1,0 +1,11 @@
+{% import "components/downloads/downloads.njk" as downloads %}
+
+<section class="container py-8 py-lg-10">
+    <h2 class="brand-pre-heading mb-4">Resources</h2>
+    <p class="lead mw-800">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus mattis rhoncus urna neque viverra justo nec. Ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper.</p>
+    {% call downloads.default() %}{% endcall %}
+    <div class="text-center">
+        <a class="btn btn-link" href="/quiz/" role="button">Lorem ipsum dolor sit amet
+            <img class="ml-2" src="{{ blox.sitePath }}assets/images/arrow-icon.svg" alt="" width="30px"/></a>
+    </div>
+</section>

@@ -1,0 +1,61 @@
+.matchstick {
+  background-image: url("/assets/images/matchsticks.png");
+  width: 15px;
+  height: 200px;
+  transition: 0.2s;
+
+  &:hover {
+    margin-top: -15px;
+  }
+}
+.matchstick.matchstick-1 {
+  background-position: 0 0;
+  width: 18px;
+}
+.matchstick.matchstick-2 {
+  background-position: -20px 0;
+}
+.matchstick.matchstick-3 {
+  background-position: -37px 0;
+  height: 201px;
+}
+.matchstick.matchstick-4 {
+  background-position: -54px 0;
+}
+.matchstick.matchstick-5 {
+  background-position: -71px 0;
+  height: 201px;
+}
+.matchstick.matchstick-6 {
+  background-position: -88px 0;
+  height: 201px;
+}
+.matchstick.matchstick-7 {
+  background-position: -105px 0;
+  width: 13px;
+}
+.matchstick.matchstick-8 {
+  background-position: -120px 0;
+  width: 18px;
+}
+.matchstick.matchstick-9 {
+  background-position: -140px 0;
+  width: 17px;
+}
+.matchstick.matchstick-10 {
+  background-position: -159px 0;
+  width: 30px;
+  height: 201px;
+}
+.matchstick.matchstick-11 {
+  background-position: -191px 0;
+  height: 201px;
+}
+.matchstick.matchstick-12 {
+  background-position: -208px 0;
+  width: 27px;
+}
+.matchstick.matchstick-13 {
+  background-position: -237px 0;
+  width: 25px;
+}

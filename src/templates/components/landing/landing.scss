@@ -1,0 +1,32 @@
+.jumbotron {
+  @extend .position-relative;
+
+  z-index: 1;
+  background: $brand-primary url("/assets/images/banner-sm.jpg")
+    center/cover;
+
+  @include media-breakpoint-up(md) {
+    background: $brand-primary
+      url("/assets/images/banner-lg.jpg") center/cover;
+  }
+
+  &::before {
+    @include gradient($brand-secondary, transparent, horizontal);
+    @extend .w-100;
+    @extend .h-100;
+    @extend .position-absolute;
+
+    top: 0;
+    z-index: -1;
+    mix-blend-mode: screen;
+    content: "";
+  }
+
+  &::after {
+    @extend .brand-curve;
+
+    bottom: -5px;
+    z-index: -1;
+    transform: rotate(180deg);
+  }
+}

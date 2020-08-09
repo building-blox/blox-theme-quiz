@@ -1,0 +1,5 @@
+---
+partialPackages:
+       - name: blox.partial-package.navigation
+         blocks:
+            - name: blox.partial.nav.quiz

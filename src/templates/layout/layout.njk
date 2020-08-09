@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>{{page.title}}
+            |
+            {{blox.app.name}}!</title>
+        <meta name="description" content="{{app.description}}"/>
+        <meta name="theme-color" content="{{app.pwaThemeColor}}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ blox.sitePath }}images/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ blox.sitePath }}images/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ blox.sitePath }}images/icons/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <!-- These are not blox styles. They're just used for the carousel and can be removed if you want. -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+        <script src="https://kit.fontawesome.com/0b3e712e23.js" crossorigin="anonymous"></script>
+        <!-- Custom styles -->
+        <link rel="stylesheet" href="{{ blox.sitePath }}assets/css/styles.min.css">
+        {% if blox.page.hasStyles %}
+            <link rel="stylesheet" href="{{ blox.page.path }}styles.min.css">
+        {% endif %}
+        <!-- Extra head elements (you can create actions for Blox hooks) -->
+        {% include "utils/head-elements.njk" %}
+    </head>
+
+    <body data-theme="light">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+                <div class="container">
+
+                    <a class="navbar-brand" href="/">
+                        <h3 style="color:#e11c47">QUIZ</h3>
+                    </a>
+
+                    <div>
+                        <a class="d-lg-none mr-2" href="#">
+                            <img src="{{ blox.sitePath }}assets/images/facebook-icon-dark.svg" alt="" width="28px"/>
+                        </a>
+                        <a class="d-lg-none mr-2" href="#">
+                            <img src="{{ blox.sitePath }}assets/images/youtube-icon-dark.svg" alt="" width="32px"/>
+                        </a>
+
+                        <button class="navbar-toggler border-0 rounded bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a href="/about/" {% if blox.page.name == 'about' %} class="nav-link" {% else %} {% endif %}>About</a>
+                            </li>
+                        </ul>
+                        <div class="text-center">
+                            <a class="btn btn-gradient d-block d-md-inline-block my-4 my-lg-0 ml-lg-5" href="#" role="button">Quiz</a>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+        <!-- Admin page doesn't have a footer -->
+        {% if blox.page.name !== 'admin' %}
+            <footer class="footer-section bg-primary pt-9 pt-lg-10 pb-4">
+
+                <section class="container">
+
+                    <div class="row align-items-center pb-5 mb-5 mb-lg-0">
+                        <div class="col-lg-6">
+                            <h2 class="brand-pre-heading text-white">Newsletter</h2>
+                            <p class="text-white pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                        </div>
+                        <div class="col-lg-6 text-right">
+                            <form class="subscribe-form form-inline justify-content-lg-end flex-nowrap">
+                                <div class="form-group flex-grow-1 mb-0">
+                                    <input type="email" class="form-control w-100 border-0 shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address">
+                                </div>
+                                <button type="submit" class="btn btn-secondary">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center">
+                        <div class="col-md-6 mb-5 mb-md-0">
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-start py-4">
+                                <a class="lead text-white" href="#">
+                                    <img class="d-block d-md-inline-block mx-auto mb-2 mb-md-0 mr-md-3" src="{{ blox.sitePath }}assets/images/facebook-icon.svg" alt=""/>Join us on Facebook</a>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-start py-4 mb-5">
+                                <a class="lead text-white" href="#">
+                                    <img class="d-block d-md-inline-block mx-auto mb-2 mb-md-0 mr-md-3" src="{{ blox.sitePath }}assets/images/youtube-icon.svg" alt=""/>Follow us on Youtube</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-center text-md-right">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a class="" href="/resources/">Resources</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="" href="/about/">About</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr class="border-white">
+
+                    <small class="d-block text-center text-white">©
+                        <script type="text/javascript">
+                            document.write(new Date().getFullYear());
+                        </script>
+                        Lorum Ipsum
+                    </small>
+                </section>
+
+            </footer>
+        {% endif %}
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <!-- Custom scripts -->
+        <script src="{{ blox.sitePath }}/js/index.min.js"></script>
+        {% if blox.page.hasScripts %}
+            <script src="{{ blox.page.path }}index.min.js"></script>
+        {% endif %}
+    </body>
+
+</html>

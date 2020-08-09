@@ -1,0 +1,21 @@
+{% import "components/landing/landing.njk" as landing %}
+{% import "components/intro/intro.njk" as intro %}
+{% import "components/how-it-works/how-it-works.njk" as howItWorks %}
+
+{% set page = {
+    name: 'home',
+    title: 'Home'
+} %}
+
+{% extends "layout/layout.njk" %}
+
+{% block content %}
+    <div class="home">
+        {% call landing.default() %}{% endcall %}
+        {% call intro.default({blox: blox}) %}{% endcall %}
+        {% include "pages/home/partials/about/about.njk" %}
+        {% call howItWorks.default() %}{% endcall %}
+        {% include "pages/home/partials/resources/resources.njk" %}
+    </div>
+
+{% endblock %}

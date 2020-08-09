@@ -1,0 +1,17 @@
+.about-section {
+  @extend .position-relative;
+  @extend .brand-strip-bg;
+
+  &::before {
+    @extend .brand-curve;
+
+    top: -5px;
+  }
+
+  &::after {
+    @extend .brand-curve;
+
+    bottom: -5px;
+    transform: rotate(180deg);
+  }
+}

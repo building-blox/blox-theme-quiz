@@ -1,0 +1,18 @@
+/************
+Main Sass file
+*************/
+@import 'variables';
+@import 'mixins';
+
+/** Import Bootstrap */
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+//dist/theme is generated as a Blox action using values from the database
+@import 'dist/theme';
+@import 'theme';
+
+//dist/components is generated
+@import './dist/components';
+
+@import '../../templates/layout/layout';
+@import "global";

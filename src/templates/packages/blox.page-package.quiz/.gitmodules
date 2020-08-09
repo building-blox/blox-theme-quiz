@@ -1,0 +1,12 @@
+[submodule "blox.page.confirm.quiz"]
+	path = blox.page.confirm.quiz
+	url = https://github.com/richjava/blox.page.confirm.quiz.git
+[submodule "blox.page.questions.quiz"]
+	path = blox.page.questions.quiz
+	url = https://github.com/richjava/blox.page.questions.quiz.git
+[submodule "blox.page.quiz.quiz"]
+	path = blox.page.quiz.quiz
+	url = https://github.com/richjava/blox.page.quiz.quiz.git
+[submodule "blox.page.results.quiz"]
+	path = blox.page.results.quiz
+	url = https://github.com/richjava/blox.page.results.quiz.git

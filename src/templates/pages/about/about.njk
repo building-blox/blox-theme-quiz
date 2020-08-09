@@ -1,0 +1,14 @@
+{% import "components/bio/bio.njk" as bio %}
+
+{% set page = {
+    name: 'about',
+    title: 'About'
+} %}
+
+{% extends "layout/layout.njk" %}
+
+{% block content %}
+    <section class="about">
+        {% call bio.default(blox) %}{% endcall %}
+    </section>
+{% endblock %}

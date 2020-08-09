@@ -1,0 +1,15 @@
+---
+partialPackages:
+       - name: blox.partial-package.navigation
+         blocks:
+            - name: blox.partial.nav.quiz
+       - name: blox.partial-package.resources
+         blocks:
+            - name: blox.partial.downloads.quiz
+       - name: blox.partial-package.social
+         blocks:
+            - name: blox.partial.socialbar.quiz
+componentPackages:
+       - name: blox.component-package.about
+         blocks:
+            - name: blox.component.bio.quiz
