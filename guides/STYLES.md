@@ -76,7 +76,7 @@ Note: **Don't write anything in the ```assets/scss/dist``` directory as it will 
 
 There are four ThemerCMS colors:
 - ```primary```: This is generally used for main blocks of color (it has nothing to do with primary colors on the color wheel)
-- ```secondary```: The main accent color (used for calls to action)
+- ```secondary```: The main accent color (used for calls-to-action)
 - ```variant``` (optional): This is a variant of the secondary color, or a supplimentary color
 - ```dark```: Generally used for body text for light themes and background color for dark themes
 

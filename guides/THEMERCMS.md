@@ -1,4 +1,4 @@
-# ThemerCMS Style Guide
+# ThemerCMS Guide
 
 ## Table of Contents
 
