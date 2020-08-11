@@ -3,6 +3,7 @@
 ## Table of Contents
 
 1. [Terminology](#terminology)
+   - [Template](#template)
    - [Module](#module)
    - [Partial](#partial)
    - [Component](#component)
